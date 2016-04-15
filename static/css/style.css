@@ -1,0 +1,524 @@
+.EBGaramond {
+  font-family: 'EB Garamond', serif;
+}
+.Raleway {
+  font-family: 'Raleway', sans-serif;
+}
+.JosefinSans {
+  font-family: 'Josefin Sans', sans-serif;
+}
+.Quicksand {
+  font-family: 'Quicksand', sans-serif;
+}
+.Lora {
+  font-family: 'Lora', serif;
+}
+body {
+  font-family: 'EB Garamond', serif;
+}
+h1,
+h2 {
+  font-family: 'Raleway', sans-serif;
+  color: #022a47;
+}
+h3,
+h4,
+h5 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+}
+nav {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  letter-spacing: 3px;
+}
+body {
+  background-color: white;
+  width: 100%;
+}
+#wiki_nav {
+  top: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-color: transparent;
+  padding-right: 5%;
+  padding-left: 3%;
+}
+#wiki_nav img {
+  width: 100px;
+  top: -25px;
+  z-index: 1000;
+  position: absolute;
+}
+#wiki_nav .dropdown-menu {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+#wiki_nav .dropdown-menu .active > a {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+#wiki_nav li {
+  letter-spacing: 5px;
+}
+#wiki_nav li a {
+  color: #343434;
+}
+#wiki_nav li a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+/*MIXINS*/
+.RowOverride {
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 100%;
+  margin-right: 0px;
+  margin-left: 0px;
+  display: block;
+  padding-bottom: 5%;
+}
+.PFormat {
+  font-size: 17px;
+  color: #333;
+}
+.CenterInline {
+  margin: 0 auto;
+}
+.CapFormat {
+  font-size: 13px;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 1%;
+  text-align: right;
+  font-style: italic;
+  color: rgba(51, 51, 51, 0.8);
+}
+.BoxShadow {
+  box-shadow: 0px 2px 1px 0px grey;
+}
+/*End MIXINS*/
+body {
+  max-height: 4000px;
+  font-size: 17px;
+  color: #333;
+}
+#intro,
+#about,
+#reg_login,
+#component,
+#footer {
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 100%;
+  margin-right: 0px;
+  margin-left: 0px;
+  display: block;
+  padding-bottom: 5%;
+}
+#intro {
+  padding-top: 10%;
+  padding-bottom: 5%;
+  padding-left: 10%;
+  height: 30%;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+#intro h4 {
+  margin-bottom: 2px;
+  letter-spacing: 3px;
+  color: rgba(255, 255, 255, 0.78);
+}
+#intro h1 {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  font-size: 50px;
+  color: white;
+  letter-spacing: 20px;
+}
+#intro p {
+  font-family: "Raleway", sans-serif;
+}
+#about {
+  height: 25%;
+  margin-top: 3%;
+}
+#about h1,
+#about h4 {
+  text-align: center;
+}
+#about h1 {
+  letter-spacing: 11px;
+  font-size: 50px;
+  font-weight: 400;
+  margin-top: 3%;
+}
+#about h4 {
+  font-family: 'Crete Round', serif;
+  letter-spacing: 5px;
+  font-weight: 300;
+  margin-bottom: 2%;
+}
+#about p {
+  text-align: justify;
+  font-size: 1.5em;
+}
+#about img {
+  box-shadow: 0px 2px 1px 0px grey;
+  width: 100%;
+  height: auto;
+  margin: 2% auto;
+}
+#about #about-body {
+  height: 20%;
+  overflow: hidden;
+}
+#about #about-body a {
+  text-decoration: none;
+}
+#about #about-picture .caption {
+  font-size: 13px;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 1%;
+  text-align: right;
+  font-style: italic;
+  color: rgba(51, 51, 51, 0.8);
+}
+#reg_login {
+  background-image: url("../../images/header/header.jpg");
+  background-size: cover;
+  background-position: bottom;
+  color: white;
+  padding: 0% 0% 0% 0%;
+  height: 100%;
+}
+#reg_login h3 {
+  margin-top: 2px;
+  font-size: 26px;
+  letter-spacing: 3px;
+  margin-left: 5%;
+  margin-bottom: 6%;
+}
+#reg_login h4 {
+  font-size: 16px;
+  margin-top: 6%;
+  margin-left: 5%;
+}
+#reg_login a {
+  color: white;
+  text-decoration: none;
+}
+#reg_login a:hover {
+  color: #272727;
+}
+#reg_login div {
+  height: 100%;
+  padding: 0% 0% 0% 0%;
+}
+#reg_login #log {
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
+}
+#reg_login #reg {
+  border-right: 2px solid rgba(255, 255, 255, 0.5);
+}
+#component {
+  margin-top: 3%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+#component h2 {
+  margin-bottom: 1%;
+}
+#component img {
+  width: 150px;
+  height: 150px;
+  border-radius: 9999px;
+  display: block;
+  margin: auto;
+  margin-bottom: 5%;
+  box-shadow: 0px 2px 1px 0px grey;
+}
+#component h4,
+#component p {
+  text-align: center;
+}
+#component h4 {
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+#component p {
+  font-size: 17px;
+  color: #333;
+}
+#component p:hover {
+  color: rgba(51, 51, 51, 0.8);
+}
+#component div {
+  margin-top: 3%;
+}
+#component a {
+  text-decoration: none;
+}
+#footer {
+  position: absolute;
+  display: block;
+  height: 30%;
+  width: 100%;
+  background-color: #141008;
+  color: white;
+  padding-top: 3%;
+  padding-bottom: 5%;
+  font-family: 'Quicksand', sans-serif;
+}
+#footer #footer_copy {
+  margin-top: 5%;
+  color: rgba(255, 255, 255, 0.6);
+}
+#footer p {
+  margin-bottom: 1px;
+}
+#footer #footer_logos {
+  width: 85%;
+}
+#page_about {
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 100%;
+  margin-right: 0px;
+  margin-left: 0px;
+  display: block;
+  padding-bottom: 5%;
+  padding-top: 3%;
+}
+#page_about h1 {
+  letter-spacing: 5px;
+}
+#page_about h4 {
+  font-family: 'Lora', serif;
+}
+#page_about img {
+  width: 100%;
+}
+#page_about p {
+  text-align: justify;
+  text-indent: 50px;
+}
+#page_about video {
+  margin-top: 2%;
+  width: 100%;
+  height: auto;
+}
+#page_about #div_vertical_gallery {
+  max-height: 90%;
+  overflow-y: scroll;
+  padding: 1%;
+}
+#page_about #div_vertical_gallery img {
+  margin-bottom: 1%;
+}
+#page_about #div_vertical_gallery a {
+  font-size: 17px;
+  text-decoration: none;
+}
+#page_component {
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 100%;
+  margin-right: 0px;
+  margin-left: 0px;
+  display: block;
+  padding-bottom: 5%;
+  margin-top: 2%;
+}
+#page_component img {
+  width: 100%;
+  box-shadow: 0px 2px 1px 0px grey;
+  margin-top: 10%;
+}
+#page_component p {
+  font-size: 17px;
+  color: #333;
+  text-align: justify;
+}
+#page_component .caption {
+  font-size: 13px;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 1%;
+  text-align: right;
+  font-style: italic;
+  color: rgba(51, 51, 51, 0.8);
+}
+.macro_component_content {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.macro_component_content h3 {
+  font-family: 'EB Garamond', serif;
+  font-style: italic;
+  margin-top: 0.5%;
+  margin-bottom: 3%;
+}
+.macro_component_content p {
+  font-size: 17px;
+  color: #333;
+  font-family: 'Lora', serif;
+  text-align: justify;
+  text-indent: 20px;
+}
+#page_team {
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 100%;
+  margin-right: 0px;
+  margin-left: 0px;
+  display: block;
+  padding-bottom: 5%;
+  padding-top: 3%;
+}
+#page_team h1 {
+  text-align: center;
+}
+.macro_team_member {
+  padding-top: 3%;
+  margin: 0 auto;
+}
+.macro_team_member img {
+  width: 200px;
+  height: auto;
+  border-radius: 1000px;
+  display: block;
+  margin: auto;
+  box-shadow: 1px 2px 1px 0px grey;
+}
+.macro_team_member h3 {
+  font-family: 'EB Garamond', serif;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 2%;
+}
+.macro_team_member h4 {
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.macro_team_member .col-md-3 {
+  width: 23%;
+}
+#page_msp {
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 100%;
+  margin-right: 0px;
+  margin-left: 0px;
+  display: block;
+  padding-bottom: 5%;
+  margin-top: 3%;
+}
+#page_msp h2 {
+  margin-bottom: 1px;
+  letter-spacing: 3px;
+}
+#page_msp h3 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 20px;
+  margin-top: 2px;
+  margin-bottom: 2%;
+}
+#page_msp p {
+  text-align: justify;
+}
+#page_msp img {
+  box-shadow: 0px 2px 1px 0px grey;
+  display: block;
+  width: 60%;
+  margin: 1% auto;
+  margin-top: 2%;
+}
+#page_msp .caption {
+  font-size: 13px;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 1%;
+  text-align: right;
+  font-style: italic;
+  color: rgba(51, 51, 51, 0.8);
+  text-align: center;
+}
+.ImgFrame {
+  padding: 2%;
+  border: 1px solid rgba(130, 132, 135, 0.7);
+  background-color: #fff;
+  margin: 2%;
+  box-shadow: 0px 0px 0.5px 0px !important;
+}
+#page_gallery {
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 100%;
+  margin-right: 0px;
+  margin-left: 0px;
+  display: block;
+  padding-bottom: 5%;
+  margin-top: 3%;
+  padding-bottom: 2%;
+}
+#page_gallery h1 {
+  margin-bottom: 3%;
+}
+#page_gallery_pagination {
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 100%;
+  margin-right: 0px;
+  margin-left: 0px;
+  display: block;
+  padding-bottom: 5%;
+  text-align: center;
+  font-family: 'Josefin sans', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+#page_gallery_pagination .pagintaion-plain {
+  width: 20%;
+  display: block;
+  margin: auto;
+}
+.page_gallery_item {
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 100%;
+  margin-right: 0px;
+  margin-left: 0px;
+  display: block;
+  padding-bottom: 5%;
+  padding-top: 5%;
+}
+.page_gallery_item img {
+  padding: 2%;
+  border: 1px solid rgba(130, 132, 135, 0.7);
+  background-color: #fff;
+  margin: 2%;
+  box-shadow: 0px 0px 0.5px 0px !important;
+  display: block;
+  margin: auto;
+}
+#page_faq {
+  padding-left: 5%;
+  padding-right: 5%;
+  width: 100%;
+  margin-right: 0px;
+  margin-left: 0px;
+  display: block;
+  padding-bottom: 5%;
+  margin-top: 3%;
+}
+#page_faq h2 {
+  margin-bottom: 2%;
+}
+#page_faq h4 {
+  font-family: 'Lora', serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #660000;
+}
+/*# sourceMappingURL=style.css.map */

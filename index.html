@@ -1,36 +1,261 @@
----
-layout: page
-description: "Philshore Blog"
----
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <title>PhilSHORE</title>
+  <!-- Fonts -->
+<link href='https://fonts.googleapis.com/css?family=EB+Garamond|Raleway:400,400italic,500,500italic,700,300|Josefin+Sans:400,600,400italic,700|Quicksand:400,700|Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <!-- endFonts -->
 
-{% for post in paginator.posts %}
-<div class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-        <h2 class="post-title">            {{ post.title }}
-        </h2>
-        {% if post.subtitle %}
-        <h3 class="post-subtitle">
-            {{ post.subtitle }}
-        </h3>
-        {% endif %}
-    </a>
-    <p class="post-meta">Posted by {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} on {{ post.date | date: "%B %-d, %Y" }}</p>
-</div>
-<hr>
-{% endfor %}
 
-<!-- Pager -->
-{% if paginator.total_pages > 1 %}
-<ul class="pager">
-    {% if paginator.previous_page %}
-    <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-    </li>
-    {% endif %}
-    {% if paginator.next_page %}
-    <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-    </li>
-    {% endif %}
-</ul>
-{% endif %}
+  <!-- bower:css -->
+  <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css?h=8eb176c7" />
+<!--   <link rel="stylesheet" href="./bower_components/videojs/dist/video-js/video-js.css?h=2c7e886e" />
+  <link rel="stylesheet" href="./bower_components/flat-ui/dist/css/flat-ui.css?h=288987af" /> -->
+  <link rel="stylesheet" href="./bower_components/components-font-awesome/css/font-awesome.css?h=b4886004" />
+  <!-- endbower-->
+    <link rel="stylesheet" href="./static/css/style.css?h=7d73ad8e">
+</head>
+
+<!-- bower:js -->
+
+  <script src="./bower_components/jquery/dist/jquery.js?h=09b2fbec"></script>
+
+<script src="./bower_components/bootstrap/dist/js/bootstrap.js?h=8cf4186c"></script>
+<!-- <script src="./bower_components/videojs/dist/video-js/video.js?h=89562bc3"></script>
+<script src="./bower_components/flat-ui/dist/js/flat-ui.js?h=8db8b80c"></script> -->
+<!-- endbower -->
+
+
+
+<!--livereload-->
+<script src="//localhost:35729/livereload.js"></script>
+<!--endlivereload-->
+
+<body>
+  <header>
+  
+<nav id="wiki_nav" class="navbar navbar-default navbar-fixed-top" role="navigation"> 
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#wiki_nav_div">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="./">
+            
+                <img src=./images/header/philshore-logo.png alt="PhilSHORE">
+            </a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="wiki_nav_div">
+            <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="./">HOME</a></li>
+            <li 
+              
+                class="dropdown" 
+              
+            >
+              <a class="dropdown-toggle" data-toggle="dropdown" href="/">ABOUT
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                
+                  <li><a href="./about/">ABOUT PHILSHORE</a></li>
+                
+                  <li><a href="./component/">PROJECT COMPONENTS</a></li>
+                
+                  <li><a href="./team/">TEAM</a></li>
+                
+              </ul>
+              </li>
+              
+                <li><a href="./philshore-tool/">MSP TOOL</a></li>
+              
+                <li><a href="./gallery/">GALLERY</a></li>
+              
+                <li><a href="./faq/">FAQS</a></li>
+              
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+    </nav>
+  
+  </header>
+
+  <div>
+    <!--Header Block-->
+    
+
+      <div id="intro" class="row"
+      
+        style="background-image: url('../../images/header/header.jpg');background-position: center;"
+      
+
+      >
+        <h4>MARINE SPATIAL PLANNING TOOL</h4>
+        <h1>MSP TOOL</h1>
+        <p>WebGIS Platform for tidal in-stream current energy development</p>
+      </div>
+    
+    <!--endIntroBlock-->
+
+    <!--Body Block-->
+    
+<div class="section">
+	<!--About Block-->
+	
+		<div id="about" class="row">
+			<h1>ABOUT PHILSHORE</h1>
+			<h4>Philippine Sites for Harnessing Ocean Renewable Energy</h4>
+			<div class="row">
+				<div id="about-body" class="col-md-8">
+					
+					<p>Also known as Tidal Current Energy Integrated Resource Assessment and Marine Spatial Planning, this project is a collaborative effort of the Philippine Council for Industry, Energy and Emerging Technology Research and Development, Department of Science and Technology (PCIEERD-DOST); University of the Philippines Diliman (UPD) - Department of Geodetic Engineering (DGE) through Training Center for Applied Geodesy and Photogrammetry (TCAGP), Department of Mechanical Engineering (DME), and Marine Science Institute (MSI); and the Renewable Energy Management Bureau, Department of Energy (REMB-DOE). Through application of Geographic Information Systems (GIS), Project PhilSHORE aims to identify the country’s potential sites for conversion of tidal current energy and at the same time, develop a webGIS-based marine spatial planning (MSP) tool for site analysis. It is hoped that this Project will lay the groundwork for the advancement of ocean renewable energy in the Philippines. This is in ...</p>
+					<a href="/about">Read More</a>
+				</div>
+				<div id="about-picture" class="col-md-4">
+					<img src=https://raw.githubusercontent.com/philshore/cdn/master/images/intro/about_philshore.jpeg>
+<p class="caption">PhilSHORE PCIEERD Technical Panel Meeting</p>
+				</div>
+			</div>
+		</div>
+	
+	<!--endAboutBlock-->
+
+	<!--Reg_Login Block-->
+	
+		<div id="reg_login" class="row">
+			<div id="reg" class="col-md-6">
+				<a href="#">
+					<h4>Not yet a part of PhilSHORE?</h4>
+					<h3>REGISTER</h3>
+				</a>
+			</div>
+			<div id="log" class="col-md-6">
+				<a href="#">
+					<h4>Already registered?</h4>
+					<h3>LOG IN</h3>
+				</a>
+			</div>
+		</div>
+	
+	<!--endReg_LoginBlock-->
+
+	<!--Component Block-->
+	
+		<div id="component" class="row">
+			<h2>PROJECT COMPONENTS</h2>
+			
+				
+				
+				
+					<div class="col-md-4">
+						<img src=https://raw.githubusercontent.com/philshore/cdn/master/images/page_component/res1_edit.png>
+						
+							<a href=./component/#hydrodynamic>
+							<h4>Hydrodynamic Modelling</h4>
+							<p>Delft3D Flow software was utilized to simulate the tidal behavior of Philippine seas for the country’s assessment of tidal current energy resource. Hydrodynamic modelling of the major regions of Luzon, Palawan and Mindanao seas were conducted and the results were validated against observed data ...</p>
+						</a>
+					</div>
+				
+
+			
+				
+				
+				
+					<div class="col-md-4">
+						<img src=https://raw.githubusercontent.com/philshore/cdn/master/images/page_component/dev2_s.png>
+						
+							<a href=./component/#sitedevice>
+							<h4>Site-Device Matching</h4>
+							<p>After potential sites have been identified, performance analysis of various tidal in-stream energy conversion technologies (TISEC) was done. A working list of 22 TISEC devices was adopted for analysis. The list was based from a shortlisting made by the International Renewable Energy Agency ...</p>
+						</a>
+					</div>
+				
+
+			
+				
+				
+				
+					<div class="col-md-4">
+						<img src=https://raw.githubusercontent.com/philshore/cdn/master/images/page_component/site1_s.jpg>
+						
+							<a href=./component/#sitesuitability>
+							<h4>Site-Suitability Analysis</h4>
+							<p>In coordination with the Department of Science and Technology, UP College of Geodetic Engineering, the Training Center for Applied Geodesy and Photogrammetry,and Marine Science Institute, was contracted to develop a tool for local governments that would assist in the developing a renewable tidal ...</p>
+						</a>
+					</div>
+				
+
+			
+				
+				
+				
+					<div class="col-md-6">
+						<div class="col-md-4">
+							<img src=https://raw.githubusercontent.com/philshore/cdn/master/images/page_component/eia.jpg>
+						</div>
+						<div class="col-md-8">
+							
+							<a href=./component/#eia>
+								<h4>Environmental Impact Assessment</h4>
+								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the ...</p>	
+							</a>	
+						</div>
+					</div>
+				
+
+			
+				
+				
+				
+					<div class="col-md-6">
+						<div class="col-md-4">
+							<img src=http://localhost:5000/images/page_component/tool1_s.png>
+						</div>
+						<div class="col-md-8">
+							
+							<a href=./component/#webgis>
+								<h4>WebGIS Development</h4>
+								<p>PhilSHORE tool is a web-based GIS (geographic information system) application which allows stakeholders, such as the government, academe and private institutions concerned with ocean renewable energy, to readily assess the potential and suitability of a particular location for ocean energy ...</p>	
+							</a>	
+						</div>
+					</div>
+				
+
+			
+		</div>
+	
+	<!--endComponentBlock-->
+
+	</div>
+
+    <!--endBodyBlock-->
+
+    <!--Footer Block-->
+    
+    <footer class="row" id="footer">
+      <div class="col-md-4">
+        <p id="footer_copy">&copy; Copyright 2016 by PhilSHORE</p>
+        <p><i class="fa fa-phone"></i> 981-8500 local 3147</p>
+        <p><i class="fa fa-envelope"></i> philshoreteam@gmail.com</p>
+      </div>
+      <div class="col-md-8">
+        
+        
+        <img id ="footer_logos" src=./about_logos_ds.png>
+      </div>
+    </footer>
+    
+    <!--endFooterBlock-->
+    
+  </div>
+</body>
+
+
+
+

@@ -1,0 +1,36 @@
+//variables
+@nav-height:50px;
+
+
+#wiki_nav{
+	//nav styles
+	top:50px;
+	height:@nav-height;
+	position:absolute;
+	background-color: fade(white,30%);
+	border-color:transparent;
+	padding-right:5%;
+	padding-left:3%;
+
+	img{
+		width: 100px;
+		top: -@nav-height/2;
+		z-index: 1000;
+		position: absolute;
+	}
+	.dropdown-menu{
+		background-color: fade(white,60%);
+		.active > a{
+			background-color: fade(white,70%);
+		}
+	}
+	li{
+		letter-spacing: 5px;
+		a{
+			color:darken(grey,30%);
+			&:hover{
+				background-color:fade(white,10%);
+			}
+		}
+	}
+}

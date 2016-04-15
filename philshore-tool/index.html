@@ -1,0 +1,153 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <title>PhilSHORE Tool</title>
+  <!-- Fonts -->
+<link href='https://fonts.googleapis.com/css?family=EB+Garamond|Raleway:400,400italic,500,500italic,700,300|Josefin+Sans:400,600,400italic,700|Quicksand:400,700|Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <!-- endFonts -->
+
+
+  <!-- bower:css -->
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css?h=8eb176c7" />
+<!--   <link rel="stylesheet" href="../bower_components/videojs/dist/video-js/video-js.css?h=2c7e886e" />
+  <link rel="stylesheet" href="../bower_components/flat-ui/dist/css/flat-ui.css?h=288987af" /> -->
+  <link rel="stylesheet" href="../bower_components/components-font-awesome/css/font-awesome.css?h=b4886004" />
+  <!-- endbower-->
+    <link rel="stylesheet" href="../static/css/style.css?h=7d73ad8e">
+</head>
+
+<!-- bower:js -->
+
+  <script src="../bower_components/jquery/dist/jquery.js?h=09b2fbec"></script>
+
+<script src="../bower_components/bootstrap/dist/js/bootstrap.js?h=8cf4186c"></script>
+<!-- <script src="../bower_components/videojs/dist/video-js/video.js?h=89562bc3"></script>
+<script src="../bower_components/flat-ui/dist/js/flat-ui.js?h=8db8b80c"></script> -->
+<!-- endbower -->
+
+
+
+<!--livereload-->
+<script src="//localhost:35729/livereload.js"></script>
+<!--endlivereload-->
+
+<body>
+  <header>
+  
+<nav id="wiki_nav" class="navbar navbar-default navbar-fixed-top" role="navigation"> 
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#wiki_nav_div">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../">
+            
+                <img src=../images/header/philshore-logo.png alt="PhilSHORE">
+            </a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="wiki_nav_div">
+            <ul class="nav navbar-nav navbar-right">
+            <li><a href="../">HOME</a></li>
+            <li 
+              
+                class="dropdown" 
+              
+            >
+              <a class="dropdown-toggle" data-toggle="dropdown" href="/">ABOUT
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                
+                  <li><a href="../about/">ABOUT PHILSHORE</a></li>
+                
+                  <li><a href="../component/">PROJECT COMPONENTS</a></li>
+                
+                  <li><a href="../team/">TEAM</a></li>
+                
+              </ul>
+              </li>
+              
+                <li class="active"><a href="../philshore-tool/">MSP TOOL</a></li>
+              
+                <li><a href="../gallery/">GALLERY</a></li>
+              
+                <li><a href="../faq/">FAQS</a></li>
+              
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+    </nav>
+  
+  </header>
+
+  <div>
+    <!--Header Block-->
+    
+
+      <div id="intro" class="row"
+      
+        style="background-image: url('../../images/header/msp.jpg');background-position: center;"
+      
+
+      >
+        <h4>MARINE SPATIAL PLANNING TOOL</h4>
+        <h1>MSP TOOL</h1>
+        <p>WebGIS Platform for tidal in-stream current energy development</p>
+      </div>
+    
+    <!--endIntroBlock-->
+
+    <!--Body Block-->
+    
+	<div class="row" id="page_msp" >
+		<h2>PhilSHORE Tool</h2>
+		<h3>Marine Spatial Planning Tool</h3>
+		<p>The PhilSHORE Tool has 4 different sub-systems. The accounts sub-system which handles user registration and information. The user and module management sub-system which allows the administrator of the application to grant access to a user. The data management sub-system act as the main repository for the resource,suitability and device layers. And the WebGIS sub-system  where an interactive map is shown and where a user or client can visualize the output of the different components of the team.</p>
+<p>The WebGIS or PhilSHORE’s functions can be found on the collapsible sidebar positioned on the left side of the interface. The feature sidebar has six main feature panels which includes Search, Pixel Data, Map Layers, Weighted Overlay, Site &amp; Device Analysis and Site-Data Distributions. Other interface widgets include map buttons, for sidebar collapse, map zoom, reset view and fullscreen, and controls for an overview map, scale and tile attribution.</p>
+<p><strong>Map Layers:</strong> The Map Layers panel allows the user to toggle the visibility of the listed layers such as site-suitability, its individual factors and a corresponding device. The layer indexing assigns the highest index to the layer which was last toggled. The device layer was assigned to always have the highest index. Basemaps, the background tiles shown on the map, can be switched to different tile providers. The basemap tile choices includes MapQuest Satellite, OSM Streetmap, and a hybrid between the two.</p>
+<p><strong>Site &amp; Device Analysis:</strong> The Site &amp; Device Analysis panel allows the users to select a TISEC device layer to be added. These device layers contains site information specific for each of the device particularly the availability and capacity factors.</p>
+<p><strong>Pixel Data:</strong> If an overlay layer is added through the Map Layers panel, if the overlay is clicked, the corresponding data on that pixel is displayed on the Pixel Data panel. Parallel pixel data identification can be performed by adding several layers on the Overlays in the Map Layers panel.</p>
+<p><strong>Weighted Overlay:</strong> This feature provides the user the ability to create a customized site-suitability by adjusting the weights of the identified site-suitability factors which were Environmental, Physical, Socio-economic, Risks, and Energy Resource, according to their own preference. The output of this calculator is a raster layer which is immediately appended in the map.</p>
+<p><strong>Site-Data Distributions:</strong> In this panel, the user can view the monthly velocity, monthly power, and velocity histogram of the clicked site (data pixel) for the designated modeling period.</p>
+
+		<img src=https://raw.githubusercontent.com/philshore/cdn/master/philshore-tool/msp1.png>
+<p class="caption">PhilSHORE WebGIS Interface</p>
+
+<img src=https://raw.githubusercontent.com/philshore/cdn/master/philshore-tool/msp2.png>
+<p class="caption">Raster output of the weighted overlay calculator</p>
+
+<img src=https://raw.githubusercontent.com/philshore/cdn/master/philshore-tool/msp3.png>
+<p class="caption">Site Velocity Histogram</p>	
+	</div>
+
+    <!--endBodyBlock-->
+
+    <!--Footer Block-->
+    
+    <footer class="row" id="footer">
+      <div class="col-md-4">
+        <p id="footer_copy">&copy; Copyright 2016 by PhilSHORE</p>
+        <p><i class="fa fa-phone"></i> 981-8500 local 3147</p>
+        <p><i class="fa fa-envelope"></i> philshoreteam@gmail.com</p>
+      </div>
+      <div class="col-md-8">
+        
+        
+        <img id ="footer_logos" src=../about_logos_ds.png>
+      </div>
+    </footer>
+    
+    <!--endFooterBlock-->
+    
+  </div>
+</body>
+
+
+
+

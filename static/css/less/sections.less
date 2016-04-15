@@ -1,0 +1,63 @@
+@intro-height:30%;
+@about-height:25%;
+@reg_log-height:10%;
+@components-height:25%;
+@footer-height:30%;
+
+@section-width:100%;
+
+/*MIXINS*/
+.RowOverride{
+	padding-left:5%;
+	padding-right:5%;
+	width:@section-width;
+	margin-right:0px;
+	margin-left:0px;
+	display:block;
+	padding-bottom: 5%;
+}
+//text format
+.PFormat{
+	font-size:17px;
+	color:@p-color;
+}
+
+//Center an inline object
+.CenterInline{
+	margin:0 auto;
+}
+
+//Caption format
+.CapFormat{
+	font-size: 13px;
+	.Raleway;
+	margin-top: 1%;
+	text-align: right;
+	font-style: italic;
+	color:fade(#333,80%);
+}
+
+//Box Shadow
+.BoxShadow{
+	box-shadow:0px 2px 1px 0px grey;	
+}
+/*End MIXINS*/
+
+body{
+	max-height:4000px;
+	.PFormat;
+}
+
+//General Section Styles
+#intro, #about, #reg_login, #component, #footer{
+	.RowOverride;
+}
+
+//Section Imports
+@import "section_intro";
+@import "section_about";
+@import "section_reg_login.less";
+@import "section_component";
+@import "section_footer";
+//End Section Imports
+
